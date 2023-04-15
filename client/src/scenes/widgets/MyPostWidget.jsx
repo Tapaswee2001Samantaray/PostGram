@@ -33,7 +33,7 @@ const MyPostWidget = ({ picturePath }) => {
 
         //send post information to the backend
         const response = await fetch(
-            `http://localhost:3001/posts`,
+            `https://post-gram.onrender.com/posts`,
             {
                 method: "POST",
                 headers: {Authorization: `Bearer ${token}`},

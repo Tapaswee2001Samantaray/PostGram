@@ -10,7 +10,7 @@ const PostsWidget = ({ userId, isProfile = false }) => {
 
     const getPosts = async () => {
         const response = await fetch(
-            "http://localhost:3001/posts",
+            "https://post-gram.onrender.com/posts",
             {
                 method: "GET",
                 headers: { Authorization: `Bearer ${token}` },
@@ -22,7 +22,7 @@ const PostsWidget = ({ userId, isProfile = false }) => {
 
     const getUserPosts = async () => {
         const response = await fetch(
-            `http://localhost:3001/posts/${userId}/posts`,
+            `https://post-gram.onrender.com/posts/${userId}/posts`,
             {
                 method: "GET",
                 headers: { Authorization: `Bearer ${token}` },
