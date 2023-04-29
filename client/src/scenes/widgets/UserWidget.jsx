@@ -19,7 +19,7 @@ const UserWidget = ({ userId, picturePath }) => {
 
     const getUser = async () => {
         const response = await fetch(
-            `https://post-gram.onrender.com/users/${userId}`,
+            `http://localhost:3001/users/${userId}`,
             {
                 method: "GET",
                 headers: { Authorization: `Bearer ${token}`},
