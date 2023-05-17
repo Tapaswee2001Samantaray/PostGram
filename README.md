@@ -97,35 +97,70 @@ To Start Frontend Server
 },
     { timestamps: true }
 ```
-## User APIs
-### /auth/register
+## Auth APIs
+### POST /auth/register
 - Create a user by taking data from a request body .
 - Password Should be in Encrypted Format.
 - __Response format__
   - _**On success**_ - Return HTTP status 201 with user document.
   - _**On error**_ - Return a suitable error message with a valid HTTP status code.
 
-### /auth/login
+### POST /auth/login
 - Allow an user to login with their email and password.
 - __Response format__
     - _**On success**_ - Return HTTP status 200 and JWT token in response body.
     - _**On error**_ - Return a suitable error message with a valid HTTP status code.
 
-## Post APIs
-### /posts
+## Posts APIs
+### POST /posts
 - Create Post by taking the data from request body.
 - __Response format__
     - _**On success**_ - Return HTTP status 201 and Post Into in response body.
     - _**On error**_ - Return a suitable error message with a valid HTTP status code.
 
-### /posts/
+### GET /posts/
 - Get all the posts.
 - __Response format__
   - _**On success**_ - Return HTTP status 200 and returns the post document.
   - _**On error**_ - Return a suitable error message with a valid HTTP status code.
 
-### /posts/:userId/posts
-- Get all the posts.
+### GET /posts/:userId/posts
+- Get a user post.
+- Read userId from Request Params.
 - __Response format__
   - _**On success**_ - Return HTTP status 200 and returns the post document.
   - _**On error**_ - Return a suitable error message with a valid HTTP status code.
+
+### PATCH /posts/:id/like
+- Update the like whether it is Liked or Disliked.
+- Read id of the post from params . 
+- Get UserId from request body.
+- __Response format__
+  - _**On success**_ - Return HTTP status 200 and returns the updatedPost document.
+  - _**On error**_ - Return a suitable error message with a valid HTTP status code.
+
+## Users APIs
+### GET /users/:id
+- Get the User .
+- read id of the user from Params.
+- __Response format__
+  - _**On success**_ - Return HTTP status 200 and returns the user document.
+  - _**On error**_ - Return a suitable error message with a valid HTTP status code.
+
+### GET /users/:id/friends
+- Get the User's Friends.
+- read id of the user from Params.
+- __Response format__
+  - _**On success**_ - Return HTTP status 200 and returns the Friends document.
+  - _**On error**_ - Return a suitable error message with a valid HTTP status code.
+
+### PATCH /users/:id/:friendId
+- Update user's friend list whenever a user add or remove a friend from his/her friend list.
+- read id of the user and friendId from Params.
+- __Response format__
+  - _**On success**_ - Return HTTP status 200 and returns the updated Friends document.
+  - _**On error**_ - Return a suitable error message with a valid HTTP status code.
+
+## Middleware
+### Authentication
+- Make sure all the restricted routes are protected.
