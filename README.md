@@ -164,3 +164,7 @@ To Start Frontend Server
 ## Middleware
 ### Authentication
 - Make sure all the restricted routes are protected.
+
+## Front-End
+### Register
+![App Screenshot](https://github.com/Tapaswee2001Samantaray/PostGram/blob/main/ScreenShots/Register.png?raw=true)
