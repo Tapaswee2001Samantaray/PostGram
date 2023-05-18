@@ -171,3 +171,19 @@ To Start Frontend Server
 
 ### Login
 ![App Screenshot](https://github.com/Tapaswee2001Samantaray/PostGram/blob/main/ScreenShots/Login.png?raw=true)
+
+### Home Page(Light)
+![App Screenshot](https://github.com/Tapaswee2001Samantaray/PostGram/blob/main/ScreenShots/HomePage(Light).png?raw=true)
+
+### Home Page(Dark)
+![App Screenshot](https://github.com/Tapaswee2001Samantaray/PostGram/blob/main/ScreenShots/HomePage(Dark).png?raw=true)
+
+### While Uploading Image
+![App Screenshot](https://github.com/Tapaswee2001Samantaray/PostGram/blob/main/ScreenShots/WhileUploadIngImage.png?raw=true)
+
+### A User's account
+![App Screenshot](https://github.com/Tapaswee2001Samantaray/PostGram/blob/main/ScreenShots/UserFeed.png?raw=true)
+
+### Responsive
+![App Screenshot](https://github.com/Tapaswee2001Samantaray/PostGram/blob/main/ScreenShots/Responsive1.png?raw=true)
+![App Screenshot](https://github.com/Tapaswee2001Samantaray/PostGram/blob/main/ScreenShots/Responsive2.png?raw=true)
